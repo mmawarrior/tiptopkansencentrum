@@ -1,0 +1,156 @@
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background: white;
+    padding: 15px 0;
+    border-bottom: 2px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Navigatie container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigatie */
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ee6f2e;
+}
+
+.hero {
+    position: relative;
+    background: url(./img/d5.JPG) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* padding: 20px; */
+    transition: all 0.5sease-in-out;
+}
+
+/* Overlay voor betere leesbaarheid */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+/* HERO TEKST */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 8px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* TITEL */
+.hero h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+/* SUBTEKST */
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Animatie effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVITEIT FIX */
+@media (max-width: 1024px) {
+    .hero {
+        height: 75vh;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 65vh;
+        background-size: cover;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+}

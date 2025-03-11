@@ -1,0 +1,92 @@
+/* Algemene sectie opmaak */
+.values-section {
+    background: #ffffff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.values-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+    gap: 80px;
+}
+
+/* Tekstgedeelte */
+.values-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.values-text h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+/* Stijlvolle lijn onder de titel */
+.underline {
+    width: 100px;
+    height: 4px;
+    background: #ee6f2e;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+/* Paragraaf tekst */
+.values-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* Afbeelding */
+.values-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.values-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.values-image img:hover {
+    transform: scale(1.04);
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .values-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .values-text h2 {
+        font-size: 2.4rem;
+    }
+
+    .values-text p {
+        font-size: 1.1rem;
+    }
+
+    .values-image img {
+        max-width: 90%;
+    }
+}

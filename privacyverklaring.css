@@ -1,0 +1,103 @@
+ #privacy-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#privacy-page header {
+    background-color: #ff6b1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#privacy-page header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#privacy-page header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+#privacy-page main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#privacy-page h2 {
+    color: #ff6b1f;
+    border-bottom: 2px solid #ff6b1f;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#privacy-page a {
+    color: #ff6b1f;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#privacy-page a:hover {
+    color: #ff6b1f;
+ }
+
+#privacy-page ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Footer Stijlen - Consistent met index.html */
+#privacy-page footer {
+    background-color: #ff6b1f; /* Donkergroen voor duurzaamheid */
+     text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+#privacy-page .footer-container {
+    background-color: #ff6b1f;
+    color: #ecf0f1;
+    padding: 20px 5%;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Schaduw boven de footer */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Links in de footer */
+#privacy-page .footer-container a {
+    text-decoration: none; /* Geen underline */
+    color: #ffffff; /* Accentkleur voor links */
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Content in de footer */
+#privacy-page .footer-container p {
+    font-size: 1.1rem; /* Zelfde tekstgrootte als index.html */
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsieve styling */
+@media (max-width: 768px) {
+    #privacy-page .footer-container {
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    #privacy-page .footer-container p {
+        font-size: 0.9rem; /* Kleinere tekstgrootte voor mobiel */
+    }
+}

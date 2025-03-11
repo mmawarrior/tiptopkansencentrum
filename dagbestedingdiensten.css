@@ -1,0 +1,81 @@
+/* Algemene styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container voor de dienst detail pagina */
+.dienst-detail {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Afbeelding styling */
+.dienst-afbeelding {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Terugknop direct links boven de afbeelding */
+.back-button {
+    display: inline-block;
+    background-color: #ff6b1f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    position: relative;
+    top: -40px; /* Zorgt dat de knop direct boven de afbeelding zit */
+    left: 0;
+}
+/* Titel styling */
+.dienst-titel {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Beschrijving styling */
+.dienst-beschrijving,
+.dienst-extra {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+}
+
+/* 📌 Responsiveness */
+@media (max-width: 768px) {
+   
+    .dienst-detail {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .dienst-titel {
+        font-size: 1.8rem;
+    }
+
+    .dienst-beschrijving,
+    .dienst-extra {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}

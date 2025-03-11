@@ -1,0 +1,60 @@
+/* Visie Sectie */
+.visie-section {
+    background:#f3e0d7;
+    padding: 90px 0;
+    text-align: center;
+}
+
+/* Container */
+.visie-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Titel Styling */
+.visie-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+    position: relative;
+}
+
+/* Groene Lijn */
+.green-line {
+    width: 80px;
+    height: 4px;
+    background: #2b6b2b;
+    border-radius: 2px;
+    margin: 10px auto 20px auto;
+}
+
+/* Tekst Styling */
+.visie-container p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Highlighted Tekst */
+.visie-container .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive Aanpassingen */
+@media (max-width: 900px) {
+    .visie-container {
+        width: 90%;
+    }
+    
+    .visie-container p {
+        font-size: 1.1rem;
+    }
+}

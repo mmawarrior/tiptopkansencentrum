@@ -1,0 +1,119 @@
+/* Algemene instellingen voor cookiebeleid pagina */
+#cookie-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+#cookie-page header {
+    background-color: #ff6b1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#cookie-page header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+#cookie-page header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Main Content Styling */
+#cookie-page main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#cookie-page h2 {
+    color: #ff6b1f;
+    border-bottom: 2px solid #ff6b1f;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+#cookie-page a {
+    color: #ff6b1f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#cookie-page a:hover {
+    color: #A0E7A0;
+}
+
+/*/* Algemene styling voor de footer */
+#cookie-page .footer-container {
+    background-color: #ff6b1f; /* Donkerblauwe achtergrondkleur */
+    color: #ecf0f1; /* Lichtgrijze tekstkleur */
+    padding: 20px 5%;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Schaduw boven de footer */
+     font-family: 'Arial', sans-serif;
+  }
+  
+  /* Content in de footer */
+  #cookie-page .footer-container p {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Links in de footer */
+  #cookie-page .footer-container a {
+    text-decoration: none;
+    color: #ffffff; /* Accentkleur voor links */
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Social media iconen - optioneel */
+  #cookie-page .footer-socials {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  #cookie-page .footer-socials a {
+    color: #ff6b1f;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  #cookie-page .footer-socials a:hover {
+    color: #ff6b1f;
+    transform: scale(1.2); /* Vergroot bij hover */
+  }
+  
+  /* Responsieve styling */
+  @media (max-width: 768px) {
+    #cookie-page .footer-container {
+      padding: 15px 5%;
+      text-align: center;
+    }
+  
+    #cookie-page .footer-container p {
+      font-size: 0.9rem; /* Kleinere tekstgrootte voor mobiel */
+    }
+  
+    #cookie-page .footer-socials a {
+      font-size: 1.2rem; /* Iets kleinere iconen op mobiel */
+    }
+  }
+  

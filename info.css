@@ -1,0 +1,95 @@
+/* INFO SECTIE */
+.info-section {
+    background: #f9f9f9;
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+/* AFBEELDING */
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-image img:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* TEKST STYLING */
+.info-text {
+    flex: 1;
+}
+
+/* TITEL */
+.info-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+    position: relative;
+}
+
+ 
+/* TEKST OPMAAK */
+.info-text p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* BELANGRIJKSTE TEKST */
+.info-text .highlight {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .info-image img {
+        max-width: 100%;
+    }
+
+    .info-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .info-text p {
+        font-size: 1.1rem;
+    }
+
+    .green-line {
+        margin: 0 auto 20px auto;
+    }
+}
